@@ -1,5 +1,6 @@
 import axios from 'axios'
-const baseURL='http://localhost:3001/extrs'
+//const baseURL='http://localhost:3001/users'
+const baseURL='https://express-extr-api.onrender.com/users'
 //show all
 export const getUsers=()=>{
    const URL = baseURL //our base url

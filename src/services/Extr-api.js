@@ -1,7 +1,8 @@
 // 
 //All of our endpoints
 import axios from 'axios'
-const baseURL='http://localhost:3001/extrs'
+//const baseURL='http://localhost:3001/extrs'
+const baseURL= 'https://express-extr-api.onrender.com/extrs'
 //show all
 export const getExtrs=()=>{
    const URL = baseURL //our base url
