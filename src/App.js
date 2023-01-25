@@ -1,6 +1,7 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Routes,Route,Link} from 'react-router-dom'
+//import { Link, useNavigate } from "react-router-dom";
 import './App.css';
 import EditExtr from './components/EditExtr';
 //import Create from './components/CreateTodo';
