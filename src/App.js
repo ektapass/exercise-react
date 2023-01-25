@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Routes,Route,Link} from 'react-router-dom'
 import './App.css';
+import EditExtr from './components/EditExtr';
+//import Create from './components/CreateTodo';
+import Extr from './components/Extr';
+import CreateUser from './components/CreateUser'
+
+import Extrs from './components/Extrs';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Exercise Tracking
+      <Router>
+        <Routes>
+          <Route path='/' element={<Extrs/>}/>
+          <Route path='/:id' element={<Extr/>}/>
+          <Route path='/:id/edit' element={<EditExtr/>}/>
+          {/* <Route path ='/:id/create' element={<Create/>}/> */}
+          <Route path="/user" element={<CreateUser/>} />
+
+          </Routes>
+
+      </Router>
+
+      
     </div>
-  );
+  )
 }
 
 export default App;
