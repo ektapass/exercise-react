@@ -13,6 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/ektapas
 
 ### How to install dependencies
 
+In terminal, run ..
+
 * npx create-react-app app-name
 * npm i axios
 
@@ -36,6 +38,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### Future Plan
+
+Plan to work on improving user interface like more fields and add more functionalities.
 
 
 
@@ -61,10 +67,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### ACknowledgement:
-Special Thanks to my instructors 
-#### Tishana Trainor
+Special Thanks to my instructors **Tishana Trainor** and
 
-#### Kasper Kain
+ **Kasper Kain**and my classmate  **Gary Newton**
 
 
 
