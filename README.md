@@ -10,6 +10,8 @@ This project was bootstrapped with [Create React App](https://github.com/ektapas
 
 ### Technologies Used
 * React
+* HTML
+* JavaScript
 
 ### How to install dependencies
 
