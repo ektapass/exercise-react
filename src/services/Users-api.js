@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {Link} from "react-router-dom"
+
 //const baseURL='http://localhost:3001/users'
 const baseURL='https://express-extr-api.onrender.com/users'
 //show all
@@ -10,12 +10,7 @@ export const getUsers=()=>{
 }
     
 
-// export const getTime=()=>{
-//    const URL = baseURL //our base url
-//    const response = axios.get(URL)//using axios's get functionality to grab our Todos
-//    return response
-// }
-//show one
+
 export const getUser = (id)=>{
    const URL = `${baseURL}/${id}`
    const response = axios.get(URL)
@@ -28,13 +23,6 @@ export const editUser = (id,updatedUser) =>{
    return response
 
 }
-//edit the time
-
-// export const editTime = (id,updatedTime)=>{
-// const URL = `${baseURL}/${id}`
-// const response = axios.put(URL,updatedTime)
-// return response
-// }
 
 //create the exercise 
 export const createUser = (user) =>{

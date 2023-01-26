@@ -6,7 +6,10 @@ function Create() {
     const nav = useNavigate()
 
     const createTheExtr = (e) => {
-        const extr = { description: e.target.description.value, complete: false }
+        const extr = { description: e.target.description.value,
+            duration:e.target.duration.value,
+            complete: false }
+
         createExtr(extr)
         nav('/')
     }
@@ -22,6 +25,8 @@ function Create() {
             <form onSubmit={createTheExtr}>
                 <input type ='text' name='description' id='dsc'/>
                 <br/>
+                <input type ='text' name='duration' id='du'/>
+                {/* <input type ='text' name='comp' id='dsc'/> */}
                  
                 <input type = 'submit'/>
 

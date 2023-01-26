@@ -15,19 +15,22 @@ export default function Extrs() {
     return (
         <div>
             
-            <ul>
+            
                 {extrs.map((extr) => {
                     return (
                         <div>
                     <Link to = {`/${extr._id}`}>{extr.description}</Link>
-                        {/* //<li><a href = {`/${extr._id}`}>{extr.time}</a></li> */}
+                     <p>{extr.duration}</p>
+                    
+                       
                         </div>
                         )
                     
                 })}
-
-            </ul>
-            <Create/>
+                
+                      
+                
+             <Create/>
             
 
         </div>

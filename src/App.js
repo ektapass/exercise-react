@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Routes,Route,Link} from 'react-router-dom'
 //import { Link, useNavigate } from "react-router-dom";
 import './App.css';
 import EditExtr from './components/EditExtr';
+import User from './components/User'
+import Users from './components/Users'
 //import Create from './components/CreateTodo';
 import Extr from './components/Extr';
 import CreateUser from './components/CreateUser'
@@ -21,7 +23,9 @@ function App() {
           <Route path='/:id' element={<Extr/>}/>
           <Route path='/:id/edit' element={<EditExtr/>}/>
           {/* <Route path ='/:id/create' element={<Create/>}/> */}
-          <Route path="/user" element={<CreateUser/>} />
+          <Route path='/users' element={<Users/>}/>
+          <Route path='/user:id' element={<User/>}/>
+          <Route path="/create" element={<CreateUser/>} />
 
           </Routes>
 

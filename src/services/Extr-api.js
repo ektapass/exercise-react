@@ -1,9 +1,9 @@
 // 
 //All of our endpoints
 import axios from 'axios'
-import {Link} from "react-router-dom"
+
 //const baseURL='http://localhost:3001/extrs'
-const baseURL= 'https://express-extr-api.onrender.com/extrs'
+ const baseURL= 'https://express-extr-api.onrender.com/extrs'
 //show all
 export const getExtrs=()=>{
    const URL = baseURL //our base url
@@ -11,11 +11,7 @@ export const getExtrs=()=>{
    return response
 }
 
-// export const getTime=()=>{
-//    const URL = baseURL //our base url
-//    const response = axios.get(URL)//using axios's get functionality to grab our Todos
-//    return response
-// }
+
 //show one
 export const getExtr = (id)=>{
    const URL = `${baseURL}/${id}`
@@ -29,13 +25,7 @@ export const editExtr = (id,updatedExtr) =>{
    return response
 
 }
-//edit the time
 
-// export const editTime = (id,updatedTime)=>{
-// const URL = `${baseURL}/${id}`
-// const response = axios.put(URL,updatedTime)
-// return response
-// }
 
 //create the exercise 
 export const createExtr = (extr) =>{
