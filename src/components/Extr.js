@@ -8,11 +8,9 @@ const Extr = ()  => {
   const [extr, setExtr]= useState({})//setting up our state
   useEffect(()=>{
     getExtr(id) //getting the one Todo from the api using the id
-    .then(res=>{
-      
-      setExtr(res.data)
-      console.log(res.data)
-      console.log(extr)
+    .then(res=>{setExtr(res.data)
+      // console.log(res.data)
+      // console.log(extr)
     })
   },[])
 
